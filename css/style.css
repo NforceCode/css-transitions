@@ -60,12 +60,13 @@ body {
   box-shadow: inset 0px 0px 28px -8px rgba(0, 0, 0, 0.75);
 }
 
-.link::before, .link::after {
+.link::before,
+.link::after {
   content: "";
   display: block;
 
   position: absolute;
-  left: 0;
+  
 
   transition: width  ease-in-out 0.3s;
   width: 0px;
@@ -75,13 +76,16 @@ body {
 
 .link::before {
   bottom: 115%;
+  left: 0;
 }
 
 .link::after {
   top: 115%;
+  right: 0;
 }
 
-.link:hover::after, .link:hover::before{
+.link:hover::after,
+.link:hover::before{
   width: 100%;
 }
 
